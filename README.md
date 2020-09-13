@@ -6,7 +6,7 @@
 
 `node-libvips` provides all the options or settings which is offered by official node docker image `node:14.9-buster`. The only difference is having globally installed and custom compiled `libvips` with additional image libraries.
 
-## How to get
+### How to get
 
 The `node-libvips` docker image is served from a public repository in Docker Hub. You can get it by running :
 
