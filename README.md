@@ -10,6 +10,13 @@
 
 The usage of node-libvips is identical to the official node docker images. Because node-libvips only installs a global system library.
 
+```Dockerfile
+FROM uguraslan/node-libvips:latest
+
+WORKDIR /home/node/app
+COPY . /home/node/app
+```
+
 ## Built With
 
 * Node.js - 14.9
