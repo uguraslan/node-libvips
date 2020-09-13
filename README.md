@@ -13,8 +13,17 @@ The usage of node-libvips is identical to the official node docker images. Becau
 ```Dockerfile
 FROM uguraslan/node-libvips:latest
 
+# set working directory
 WORKDIR /home/node/app
+
+# copy your project code
 COPY . /home/node/app
+
+# install dependencies [yarn also exists in the image]
+RUN npm install
+
+# start running your project with node or npm
+CMD ["node", "index.js"]
 ```
 
 ## Built With
